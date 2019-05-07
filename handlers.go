@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qor/auth/claims"
-	"github.com/qor/responder"
-	"github.com/qor/session"
+	"github.com/itech-eng/auth/claims"
+	"github.com/itech-eng/responder"
+	"github.com/itech-eng/session"
 )
 
 func respondAfterLogged(claims *claims.Claims, context *Context) {

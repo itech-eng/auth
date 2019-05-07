@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
-	"github.com/qor/qor/utils"
-	"github.com/qor/session"
+	"github.com/itech-eng/auth"
+	"github.com/itech-eng/auth/auth_identity"
+	"github.com/itech-eng/auth/claims"
+	"github.com/itech-eng/qor/utils"
+	"github.com/itech-eng/session"
 )
 
 // DefaultAuthorizeHandler default authorize handler

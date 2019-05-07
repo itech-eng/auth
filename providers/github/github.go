@@ -7,10 +7,10 @@ import (
 	"reflect"
 
 	"github.com/google/go-github/github"
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
-	"github.com/qor/qor/utils"
+	"github.com/itech-eng/auth"
+	"github.com/itech-eng/auth/auth_identity"
+	"github.com/itech-eng/auth/claims"
+	"github.com/itech-eng/qor/utils"
 	"golang.org/x/oauth2"
 )
 

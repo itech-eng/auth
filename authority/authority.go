@@ -4,10 +4,10 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/qor/auth"
-	"github.com/qor/middlewares"
-	"github.com/qor/roles"
-	"github.com/qor/session"
+	"github.com/itech-eng/auth"
+	"github.com/itech-eng/middlewares"
+	"github.com/itech-eng/roles"
+	"github.com/itech-eng/session"
 )
 
 var (

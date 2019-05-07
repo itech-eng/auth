@@ -9,11 +9,11 @@ import (
 	"reflect"
 
 	"github.com/mrjones/oauth"
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
-	"github.com/qor/qor/utils"
-	"github.com/qor/session"
+	"github.com/itech-eng/auth"
+	"github.com/itech-eng/auth/auth_identity"
+	"github.com/itech-eng/auth/claims"
+	"github.com/itech-eng/qor/utils"
+	"github.com/itech-eng/session"
 )
 
 var UserInfoURL = "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
@@ -135,7 +135,7 @@ func (Provider) GetName() string {
 // ConfigAuth config auth
 func (provider *Provider) ConfigAuth(auth *auth.Auth) {
 	provider.Auth = auth
-	provider.Auth.Render.RegisterViewPath("github.com/qor/auth/providers/twitter/views")
+	provider.Auth.Render.RegisterViewPath("github.com/itech-eng/auth/providers/twitter/views")
 }
 
 // NewConsumer new twitter consumer

@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
-	"github.com/qor/auth/providers/password/encryptor"
-	"github.com/qor/auth/providers/password/encryptor/bcrypt_encryptor"
-	"github.com/qor/session"
+	"github.com/itech-eng/auth"
+	"github.com/itech-eng/auth/auth_identity"
+	"github.com/itech-eng/auth/claims"
+	"github.com/itech-eng/auth/providers/password/encryptor"
+	"github.com/itech-eng/auth/providers/password/encryptor/bcrypt_encryptor"
+	"github.com/itech-eng/session"
 )
 
 // Config password config
@@ -83,10 +83,10 @@ func (Provider) GetName() string {
 
 // ConfigAuth config auth
 func (provider Provider) ConfigAuth(auth *auth.Auth) {
-	auth.Render.RegisterViewPath("github.com/qor/auth/providers/password/views")
+	auth.Render.RegisterViewPath("github.com/itech-eng/auth/providers/password/views")
 
 	if auth.Mailer != nil {
-		auth.Mailer.RegisterViewPath("github.com/qor/auth/providers/password/views/mailers")
+		auth.Mailer.RegisterViewPath("github.com/itech-eng/auth/providers/password/views/mailers")
 	}
 }
 
